@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ToDo {
+@objcMembers class ToDo: NSObject {
     var title: String
     var isComplete: Bool
     var dueDate: Date
@@ -41,7 +41,7 @@ class ToDo {
         return Mirror(reflecting: self).children.map { $0.value }
     }
     
-    func copy() -> Any {
+    override func copy() -> Any {
         let newToDo = ToDo(
             title: title,
             isComplete: isComplete,
