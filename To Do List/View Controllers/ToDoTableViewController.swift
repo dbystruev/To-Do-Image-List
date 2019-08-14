@@ -33,10 +33,14 @@ class ToDoTableViewController: UITableViewController {
         return cell
     }
     
-    // MARK: - Cell Content
+    // MARK: - Cell Content    
     func configure(_ cell: ToDoCell, with todo: ToDo) {
         guard let stackView = cell.stackView else { return }
-        guard stackView.arrangedSubviews.count == 0 else { return }
+//        guard stackView.arrangedSubviews.count == 0 else { return }
+        stackView.arrangedSubviews.forEach { subview in
+            stackView.removeArrangedSubview(subview)
+            subview.removeFromSuperview()
+        }
         
         for index in 0 ..< todo.keys.count {
             let key = todo.capitilizedKeys[index]
@@ -75,7 +79,6 @@ class ToDoTableViewController: UITableViewController {
                 )
                 imageView.addConstraint(heightConstraint)
                 stackView.addArrangedSubview(imageView)
-                
             }
         }
     }
@@ -93,14 +96,6 @@ class ToDoTableViewController: UITableViewController {
         guard let selectedIndex = tableView.indexPathForSelectedRow else { return }
         let source = segue.source as! ToDoItemTableViewController
         todos[selectedIndex.row] = source.todo
-        if let toDoCell = tableView.cellForRow(at: selectedIndex) as? ToDoCell {
-            if let stackView = toDoCell.stackView {
-                stackView.arrangedSubviews.forEach { subview in
-                    stackView.removeArrangedSubview(subview)
-                    subview.removeFromSuperview()
-                }
-            }
-        }
         tableView.reloadRows(at: [selectedIndex], with: .automatic)
     }
 }
