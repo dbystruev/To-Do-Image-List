@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6953664724B431EB005BDBA7 /* Screenshot02.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6953664524B431EB005BDBA7 /* Screenshot02.jpeg */; };
+		6953664824B431EB005BDBA7 /* Screenshot01.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 6953664624B431EB005BDBA7 /* Screenshot01.jpeg */; };
 		6972F48222FC8EF1006656BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6972F48122FC8EF1006656BB /* AppDelegate.swift */; };
 		6972F48722FC8EF1006656BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6972F48522FC8EF1006656BB /* Main.storyboard */; };
 		6972F48922FC8EFB006656BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6972F48822FC8EFB006656BB /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6953664524B431EB005BDBA7 /* Screenshot02.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot02.jpeg; sourceTree = "<group>"; };
+		6953664624B431EB005BDBA7 /* Screenshot01.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Screenshot01.jpeg; sourceTree = "<group>"; };
 		6972F47E22FC8EF1006656BB /* To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6972F48122FC8EF1006656BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6972F48622FC8EF1006656BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6953664424B431EB005BDBA7 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				6953664524B431EB005BDBA7 /* Screenshot02.jpeg */,
+				6953664624B431EB005BDBA7 /* Screenshot01.jpeg */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		6972F47522FC8EF1006656BB = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +99,7 @@
 				6972F49D22FC96C2006656BB /* Cells */,
 				6972F4A022FC9F83006656BB /* Extensions */,
 				6972F49322FC8F16006656BB /* Models */,
+				6953664424B431EB005BDBA7 /* Screenshots */,
 				6972F49722FC912E006656BB /* Storyboards */,
 				69A7764F2301E9D900E3C16F /* View */,
 				6972F49822FC9137006656BB /* View Controllers */,
@@ -221,7 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				6972F48C22FC8EFB006656BB /* LaunchScreen.storyboard in Resources */,
+				6953664724B431EB005BDBA7 /* Screenshot02.jpeg in Resources */,
 				6972F48922FC8EFB006656BB /* Assets.xcassets in Resources */,
+				6953664824B431EB005BDBA7 /* Screenshot01.jpeg in Resources */,
 				6972F48722FC8EF1006656BB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,12 +411,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2020.07.07;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "$(SRCROOT)/To Do List/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.learnSwift.To-Do-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -413,12 +431,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2020.07.07;
 				DEVELOPMENT_TEAM = 8J39KF9DMS;
 				INFOPLIST_FILE = "$(SRCROOT)/To Do List/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.learnSwift.To-Do-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
